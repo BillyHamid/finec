@@ -1,0 +1,17 @@
+# Standardize line endings for all text files (including your source code)
+* text=auto
+
+# Explicitly ensure common code files are treated as text
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.json text
+*.css text
+*.html text
+*.md text
+
+# Exclude node_modules (and build) from line ending conversions
+# This is a safe guard, but they should also be in .gitignore
+node_modules/** binary
+build/** binary
